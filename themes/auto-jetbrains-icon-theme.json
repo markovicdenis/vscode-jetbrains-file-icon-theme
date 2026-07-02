@@ -157,7 +157,7 @@
             "iconPath": "./icons/file/documentation_dark.svg"
         },
         "file_env": {
-            "iconPath": "./icons/file/config_dark.svg"
+            "iconPath": "./icons/file/env_dark.svg"
         },
         "file_gitignore": {
             "iconPath": "./icons/file/gitignore.svg"
@@ -550,7 +550,7 @@
             "iconPath": "./icons/file/documentation.svg"
         },
         "file_env_light": {
-            "iconPath": "./icons/file/config.svg"
+            "iconPath": "./icons/file/env.svg"
         },
         "file_gitignore_light": {
             "iconPath": "./icons/file/gitignore.svg"
