@@ -42,6 +42,9 @@
         "folder_git": {
             "iconPath": "./icons/folder/folder_git_dark.svg"
         },
+        "folder_github": {
+            "iconPath": "./icons/folder/folder_github_dark.svg"
+        },
         "folder_server": {
             "iconPath": "./icons/folder/folder_server_dark.svg"
         },
@@ -149,6 +152,12 @@
         },
         "file_markdown": {
             "iconPath": "./icons/file/markdown_dark.svg"
+        },
+        "file_documentation": {
+            "iconPath": "./icons/file/documentation_dark.svg"
+        },
+        "file_env": {
+            "iconPath": "./icons/file/env_dark.svg"
         },
         "file_gitignore": {
             "iconPath": "./icons/file/gitignore.svg"
@@ -418,7 +427,8 @@
         "cmd": "folder_project",
         "git": "folder_git",
         ".git": "folder_git",
-        ".github": "folder_git",
+        ".github": "folder_github",
+        "github": "folder_github",
         ".gitlab": "folder_git",
         "templates": "folder_templates",
         ".idea": "folder_idea",
@@ -442,19 +452,22 @@
         "Dockerfile.staging": "file_docker",
         "Dockerfile.prod": "file_docker",
         "Dockerfile.production": "file_docker",
+        "Dockerfile.backend": "file_docker",
+        "Dockerfile.frontend": "file_docker",
+        "Dockerfile.postgres": "file_docker",
         "Gemfile": "file_gemfile",
         "Gemfile.lock": "file_gemfile",
         "Makefile": "file_makefile",
-        ".env": "file_text",
-        ".env.local": "file_text",
-        ".env.test": "file_text",
-        ".env.example": "file_text",
-        ".env.development": "file_text",
-        ".env.production": "file_text",
-        ".env.test.local": "file_text",
-        ".env.development.local": "file_text",
-        ".env.production.local": "file_text",
-        ".env.db": "file_text",
+        ".env": "file_env",
+        ".env.local": "file_env",
+        ".env.test": "file_env",
+        ".env.example": "file_env",
+        ".env.development": "file_env",
+        ".env.production": "file_env",
+        ".env.test.local": "file_env",
+        ".env.development.local": "file_env",
+        ".env.production.local": "file_env",
+        ".env.db": "file_env",
         "Cargo.toml": "file_cargo",
         "rust-toolchain.toml": "file_cargo",
         "Cargo.lock": "file_cargolock",
@@ -526,6 +539,8 @@
         "gleam": "file_gleam",
         "ico": "file_image",
         "svg": "file_image",
+        "doc": "file_documentation",
+        "docx": "file_documentation",
         "ttf": "file_font",
         "woff": "file_font",
         "oft": "file_font",
@@ -537,6 +552,16 @@
         "sql": "file_sql",
         "md": "file_markdown",
         "properties": "file_properties",
+        "env": "file_env",
+        "env.example": "file_env",
+        "env.local": "file_env",
+        "env.test": "file_env",
+        "env.development": "file_env",
+        "env.production": "file_env",
+        "env.test.local": "file_env",
+        "env.development.local": "file_env",
+        "env.production.local": "file_env",
+        "env.db": "file_env",
         "sh": "file_shell",
         "zsh": "file_shell",
         "bash": "file_shell",
