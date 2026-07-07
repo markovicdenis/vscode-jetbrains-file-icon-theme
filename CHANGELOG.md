@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.6.0
+
+- Add dedicated icons for GitHub folders
+- Add dedicated icon for Word documents
+- Add dedicated config icon for `.env` variants, isolated from other config mappings
+- Add compound extension mappings for prefixed `.env` files
+- Extend Dockerfile filename mappings
+
 ## 1.5.0
 
 - Add CI and release workflows with strict manifest and icon theme validation
