@@ -438,7 +438,19 @@
         ".gitlab": "folder_git",
         "templates": "folder_templates",
         ".idea": "folder_idea",
-        ".vscode": "folder_idea"
+        ".vscode": "folder_idea",
+        ".agents": "folder_idea",
+        ".antigravitycli": "folder_idea",
+        ".antigravity": "folder_idea",
+        ".claude": "folder_idea",
+        ".codegraph": "folder_idea",
+        ".omo": "folder_idea",
+        ".opencode": "folder_idea",
+        ".sisyphus": "folder_idea",
+        ".trae": "folder_idea",
+        ".cursor": "folder_idea",
+        ".windsurf": "folder_idea",
+        ".zed": "folder_idea"
     },
     "fileNames": {
         "dune": "file_dune",

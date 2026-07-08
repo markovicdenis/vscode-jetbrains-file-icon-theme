@@ -831,7 +831,19 @@
         ".gitlab": "folder_git",
         "templates": "folder_templates",
         ".idea": "folder_idea",
-        ".vscode": "folder_idea"
+        ".vscode": "folder_idea",
+        ".agents": "folder_idea",
+        ".antigravitycli": "folder_idea",
+        ".antigravity": "folder_idea",
+        ".claude": "folder_idea",
+        ".codegraph": "folder_idea",
+        ".omo": "folder_idea",
+        ".opencode": "folder_idea",
+        ".sisyphus": "folder_idea",
+        ".trae": "folder_idea",
+        ".cursor": "folder_idea",
+        ".windsurf": "folder_idea",
+        ".zed": "folder_idea"
     },
     "fileNames": {
         "dune": "file_dune",
@@ -1112,7 +1124,19 @@
             ".gitlab": "folder_git_light",
             "templates": "folder_templates_light",
             ".idea": "folder_idea_light",
-            ".vscode": "folder_idea_light"
+            ".vscode": "folder_idea_light",
+            ".agents": "folder_idea_light",
+            ".antigravitycli": "folder_idea_light",
+            ".antigravity": "folder_idea_light",
+            ".claude": "folder_idea_light",
+            ".codegraph": "folder_idea_light",
+            ".omo": "folder_idea_light",
+            ".opencode": "folder_idea_light",
+            ".sisyphus": "folder_idea_light",
+            ".trae": "folder_idea_light",
+            ".cursor": "folder_idea_light",
+            ".windsurf": "folder_idea_light",
+            ".zed": "folder_idea_light"
         },
         "fileNames": {
             "dune": "file_dune_light",
