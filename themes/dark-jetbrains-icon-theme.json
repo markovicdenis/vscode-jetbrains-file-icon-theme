@@ -261,6 +261,12 @@
         "file_pnpm": {
             "iconPath": "./icons/file/pnpm_dark.svg"
         },
+        "file_npm": {
+            "iconPath": "./icons/file/npm_dark.svg"
+        },
+        "file_license": {
+            "iconPath": "./icons/file/license_dark.svg"
+        },
         "file_tailwind": {
             "iconPath": "./icons/file/tailwind.svg"
         },
@@ -475,6 +481,18 @@
         "CMakeCache.txt": "file_config",
         "pnpm-lock.yaml": "file_pnpm",
         "pnpm-workspace.yaml": "file_pnpm",
+        "package.json": "file_npm",
+        ".npmrc": "file_npm",
+        "package-lock.json": "file_npm",
+        "npm-shrinkwrap.json": "file_npm",
+        ".npmignore": "file_npm",
+        "LICENSE": "file_license",
+        "LICENSE.txt": "file_license",
+        "LICENSE.md": "file_license",
+        "LICENSE-MIT": "file_license",
+        "LICENSE-APACHE": "file_license",
+        "COPYING": "file_license",
+        "COPYRIGHT": "file_license",
         "tailwind.config.js": "file_tailwind",
         "tailwind.config.cjs": "file_tailwind",
         "tailwind.config.ts": "file_tailwind",
