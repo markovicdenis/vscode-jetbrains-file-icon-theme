@@ -843,7 +843,19 @@
         ".trae": "folder_idea",
         ".cursor": "folder_idea",
         ".windsurf": "folder_idea",
-        ".zed": "folder_idea"
+        ".zed": "folder_idea",
+        ".workbuddy": "folder_idea",
+        "workbuddy": "folder_idea",
+        ".qoder": "folder_idea",
+        "qoder": "folder_idea",
+        ".comate": "folder_idea",
+        ".marscode": "folder_idea",
+        ".codegeex": "folder_idea",
+        ".iflycode": "folder_idea",
+        ".fittencode": "folder_idea",
+        ".lingma": "folder_idea",
+        ".joycoder": "folder_idea",
+        ".codearts": "folder_idea"
     },
     "fileNames": {
         "dune": "file_dune",
@@ -1136,7 +1148,19 @@
             ".trae": "folder_idea_light",
             ".cursor": "folder_idea_light",
             ".windsurf": "folder_idea_light",
-            ".zed": "folder_idea_light"
+            ".zed": "folder_idea_light",
+            ".workbuddy": "folder_idea_light",
+            "workbuddy": "folder_idea_light",
+            ".qoder": "folder_idea_light",
+            "qoder": "folder_idea_light",
+            ".comate": "folder_idea_light",
+            ".marscode": "folder_idea_light",
+            ".codegeex": "folder_idea_light",
+            ".iflycode": "folder_idea_light",
+            ".fittencode": "folder_idea_light",
+            ".lingma": "folder_idea_light",
+            ".joycoder": "folder_idea_light",
+            ".codearts": "folder_idea_light"
         },
         "fileNames": {
             "dune": "file_dune_light",

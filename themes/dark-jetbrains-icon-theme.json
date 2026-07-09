@@ -450,7 +450,19 @@
         ".trae": "folder_idea",
         ".cursor": "folder_idea",
         ".windsurf": "folder_idea",
-        ".zed": "folder_idea"
+        ".zed": "folder_idea",
+        ".workbuddy": "folder_idea",
+        "workbuddy": "folder_idea",
+        ".qoder": "folder_idea",
+        "qoder": "folder_idea",
+        ".comate": "folder_idea",
+        ".marscode": "folder_idea",
+        ".codegeex": "folder_idea",
+        ".iflycode": "folder_idea",
+        ".fittencode": "folder_idea",
+        ".lingma": "folder_idea",
+        ".joycoder": "folder_idea",
+        ".codearts": "folder_idea"
     },
     "fileNames": {
         "dune": "file_dune",
