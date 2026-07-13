@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.7.0
+
+- Add dedicated icon for npm files (`package.json`, `.npmrc`, `package-lock.json`, `npm-shrinkwrap.json`, `.npmignore`)
+- Add dedicated icon for license files (`LICENSE`, `LICENSE.txt`, `LICENSE.md`, `LICENSE-MIT`, `LICENSE-APACHE`, `COPYING`, `COPYRIGHT`)
+- Add JetBrains IDE folder icon for AI and IDE config folders (`.claude`, `.cursor`, `.windsurf`, `.zed`, `.opencode`, `.trae`, and more)
+
 ## 1.6.0
 
 - Add dedicated icons for GitHub folders
