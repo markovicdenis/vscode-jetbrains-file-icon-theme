@@ -75,10 +75,34 @@
           "type": "boolean",
           "default": false,
           "description": "Experimental: Enable special icons for Go test files (*_test.go)"
+        },
+        "jetbrains-file-icon-theme.enablePhpAbstractIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use a dedicated icon for PHP base/abstract classes (Abstract*.php, Base*.php)"
+        },
+        "jetbrains-file-icon-theme.enablePhpInterfaceIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use a dedicated icon for PHP interfaces (*Interface.php)"
+        },
+        "jetbrains-file-icon-theme.enablePhpTraitIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use a dedicated icon for PHP traits (*Trait.php)"
+        },
+        "jetbrains-file-icon-theme.enablePhpTestIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use a dedicated icon for PHP tests (*Test.php)"
         }
       }
     },
     "commands": [
+      {
+        "command": "jetbrains-file-icon-theme.updateFilenamePatternIcons",
+        "title": "JetBrains Icons: Refresh Filename Pattern Icons"
+      },
       {
         "command": "jetbrains-file-icon-theme.updateGoTestIcons",
         "title": "Update Go Test Icons (experimental)"
@@ -87,8 +111,10 @@
   },
   "activationEvents": [
     "onStartupFinished",
+    "onCommand:jetbrains-file-icon-theme.updateFilenamePatternIcons",
     "onCommand:jetbrains-file-icon-theme.updateGoTestIcons",
-    "onLanguage:go"
+    "onLanguage:go",
+    "onLanguage:php"
   ],
   "main": "./src/extension.js",
   "scripts": {

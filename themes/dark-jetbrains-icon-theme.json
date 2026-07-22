@@ -234,6 +234,18 @@
         "file_php": {
             "iconPath": "./icons/file/php_dark.svg"
         },
+        "file_php_abstract": {
+            "iconPath": "./icons/file/phpAbstract_dark.svg"
+        },
+        "file_php_interface": {
+            "iconPath": "./icons/file/phpInterface_dark.svg"
+        },
+        "file_php_trait": {
+            "iconPath": "./icons/file/phpTrait_dark.svg"
+        },
+        "file_php_test": {
+            "iconPath": "./icons/file/phpTest_dark.svg"
+        },
         "file_makefile": {
             "iconPath": "./icons/file/makefile_dark.svg"
         },

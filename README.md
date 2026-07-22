@@ -45,6 +45,19 @@ Icons for reserved file names
 
 ![Preview file names icons](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_file_names.png)
 
+### Icons for PHP interfaces, traits, base classes and tests
+
+PHP files whose name follows a common convention get the `php` icon with an extra badge:
+
+| File name | Icon |
+| :--- | :--- |
+| `Abstract*.php`, `Base*.php` | `php` + amber **A** badge |
+| `*Interface.php` | `php` + green ring badge |
+| `*Trait.php` | `php` + purple **T** badge |
+| `*Test.php` | `php` + test badge |
+
+Enabled by default. Activation guide is located below.
+
 ### Icons for go test files (experimental)
 
 ![Preview go test files](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_go_test_files.png)
@@ -58,6 +71,21 @@ Activation guide is located below.
 ![Select theme](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/guide_select_theme.png)
 
 You can choose icons pack for dark or light theme. An "Auto" theme is also available that adapts to the color theme.
+
+### PHP icons for interfaces, traits, base classes and tests
+
+These are enabled by default. Each one can be turned off individually through the Settings UI, or in your settings.json file:
+
+```json
+"jetbrains-file-icon-theme.enablePhpAbstractIcons": false,
+"jetbrains-file-icon-theme.enablePhpInterfaceIcons": false,
+"jetbrains-file-icon-theme.enablePhpTraitIcons": false,
+"jetbrains-file-icon-theme.enablePhpTestIcons": false,
+```
+
+A file name that matches more than one pattern gets the most specific icon, so `AbstractUserTest.php` is a test and `UserRepositoryInterface.php` is an interface.
+
+These use the same workaround as the Go test icons described below, and share the same caching caveat: a newly created file gets its special icon only after the window is reloaded (`> Developer: Reload Window`).
 
 ### Enable Icons for go test files (experimental)
 

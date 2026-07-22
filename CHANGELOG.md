@@ -1,5 +1,12 @@
 # Change Log
 
+## Unreleased
+
+- Add composite PHP icons for base classes (`Abstract*.php`, `Base*.php`), interfaces (`*Interface.php`), traits (`*Trait.php`) and tests (`*Test.php`), enabled by default
+- Generalize the experimental Go test icon plugin into a filename-pattern plugin that drives all of the above from a single rule table
+- Add `> JetBrains Icons: Refresh Filename Pattern Icons` command; the previous `Update Go Test Icons` command still works
+- Validate at build time that every filename pattern rule has matching icon definitions in all three themes and a matching setting in `package.json`
+
 ## 1.7.0
 
 - Add dedicated icon for npm files (`package.json`, `.npmrc`, `package-lock.json`, `npm-shrinkwrap.json`, `.npmignore`)

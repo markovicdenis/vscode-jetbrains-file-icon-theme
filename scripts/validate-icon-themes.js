@@ -4,6 +4,7 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+const { CONFIG_SECTION, RULES } = require('../src/plugins/filename-patterns');
 const themes = pkg.contributes.iconThemes.map((theme) => ({
   id: theme.id,
   label: theme.label,
@@ -120,6 +121,56 @@ const validateThemeBody = (themeFile, body, label) => {
   }
 };
 
+// The filename-pattern plugin writes fileNames entries at runtime, so the icon ids
+// it references have to exist up front in whichever theme variant it targets.
+const validateRuleIconIds = (themeFile, themeId, iconDefinitions) => {
+  const needsDark = themeId.endsWith('-dark') || themeId.endsWith('-auto');
+  const needsLight = themeId.endsWith('-light') || themeId.endsWith('-auto');
+
+  for (const rule of RULES) {
+    const expected = [
+      ...(needsDark ? [rule.darkIconId] : []),
+      ...(needsLight ? [rule.lightIconId] : []),
+    ];
+
+    for (const iconId of expected) {
+      if (!Object.prototype.hasOwnProperty.call(iconDefinitions, iconId)) {
+        fail(
+          `${path.basename(themeFile)}: filename pattern rule "${rule.settingKey}" references unknown icon "${iconId}"`
+        );
+      }
+    }
+  }
+};
+
+const validateRuleSettings = () => {
+  const properties = (pkg.contributes.configuration && pkg.contributes.configuration.properties) || {};
+
+  for (const rule of RULES) {
+    for (const pattern of rule.patterns) {
+      if ((pattern.match(/\*/g) || []).length !== 1) {
+        fail(`filename pattern rule "${rule.settingKey}": pattern "${pattern}" must contain exactly one "*"`);
+      }
+      if (pattern.includes('/')) {
+        fail(`filename pattern rule "${rule.settingKey}": pattern "${pattern}" must be a bare file name`);
+      }
+    }
+
+    const settingId = `${CONFIG_SECTION}.${rule.settingKey}`;
+    const property = properties[settingId];
+
+    if (!property) {
+      fail(`package.json must declare configuration property: ${settingId}`);
+    } else if (property.default !== rule.defaultEnabled) {
+      fail(
+        `${settingId}: package.json default (${property.default}) does not match rule default (${rule.defaultEnabled})`
+      );
+    }
+  }
+};
+
+validateRuleSettings();
+
 for (const theme of themes) {
   const raw = fs.readFileSync(theme.file, 'utf8');
   let parsed;
@@ -134,6 +185,7 @@ for (const theme of themes) {
   }
 
   validateThemeBody(theme.file, parsed, 'root');
+  validateRuleIconIds(theme.file, theme.id, parsed.iconDefinitions || {});
 
   if (parsed.light !== undefined) {
     const lightBody = {
