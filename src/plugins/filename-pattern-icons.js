@@ -29,8 +29,8 @@ class FilenamePatternIconsPlugin {
 
         context.subscriptions.push(
             this.outputChannel,
-            vscode.commands.registerCommand('jetbrains-file-icon-theme.updateFilenamePatternIcons', refreshCommand),
-            vscode.commands.registerCommand('jetbrains-file-icon-theme.updateGoTestIcons', refreshCommand),
+            vscode.commands.registerCommand('jetbrains-file-icon-theme-php.updateFilenamePatternIcons', refreshCommand),
+            vscode.commands.registerCommand('jetbrains-file-icon-theme-php.updateGoTestIcons', refreshCommand),
             vscode.workspace.onDidChangeConfiguration((event) => {
                 const affected = RULES.some((rule) =>
                     event.affectsConfiguration(`${CONFIG_SECTION}.${rule.settingKey}`)

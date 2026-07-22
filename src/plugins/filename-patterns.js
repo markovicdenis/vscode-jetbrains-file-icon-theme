@@ -11,7 +11,7 @@
  *
  * Kept free of any `vscode` import so the validation scripts can load it too.
  */
-const CONFIG_SECTION = 'jetbrains-file-icon-theme';
+const CONFIG_SECTION = 'jetbrains-file-icon-theme-php';
 
 const RULES = [
     {
@@ -27,6 +27,20 @@ const RULES = [
         patterns: ['Abstract*.php', 'Base*.php'],
         darkIconId: 'file_php_abstract',
         lightIconId: 'file_php_abstract_light',
+    },
+    {
+        settingKey: 'enablePhpServiceIcons',
+        defaultEnabled: true,
+        patterns: ['*Service.php'],
+        darkIconId: 'file_php_service',
+        lightIconId: 'file_php_service_light',
+    },
+    {
+        settingKey: 'enablePhpProviderIcons',
+        defaultEnabled: true,
+        patterns: ['*Provider.php'],
+        darkIconId: 'file_php_provider',
+        lightIconId: 'file_php_provider_light',
     },
     {
         settingKey: 'enablePhpInterfaceIcons',

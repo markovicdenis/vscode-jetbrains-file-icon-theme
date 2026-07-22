@@ -1,18 +1,17 @@
 {
-  "name": "jetbrains-file-icon-theme",
-  "displayName": "JetBrains New UI File Icon Theme Extended",
-  "description": "JetBrains IDEs New UI inspired icon theme. Minimize distractions and boost productivity",
-  "publisher": "fogio",
+  "name": "jetbrains-file-icon-theme-php",
+  "displayName": "JetBrains New UI File Icon Theme - PHP Optimized",
+  "description": "PHP-optimized version of the JetBrains New UI File Icon Theme Extended. Composite icons for PHP base classes, interfaces, traits and tests.",
+  "publisher": "markovic",
   "version": "1.7.0",
   "license": "MIT",
-  "homepage": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme",
+  "homepage": "https://github.com/markovicdenis/vscode-jetbrains-file-icon-theme",
   "bugs": {
-    "url": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme/issues",
-    "email": "nickitonov@gmail.com"
+    "url": "https://github.com/markovicdenis/vscode-jetbrains-file-icon-theme/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fogio-org/vscode-jetbrains-file-icon-theme.git"
+    "url": "https://github.com/markovicdenis/vscode-jetbrains-file-icon-theme.git"
   },
   "icon": "assets/img/icon.png",
   "engines": {
@@ -48,50 +47,66 @@
     "font",
     "cold",
     "dark",
-    "material"
+    "material",
+    "php",
+    "laravel",
+    "symfony"
   ],
   "contributes": {
     "iconThemes": [
       {
-        "id": "jetbrains-file-icon-theme-auto",
-        "label": "| Auto | JetBrains New UI File Icon Theme",
-        "path": "./themes/auto-jetbrains-icon-theme.json"
+        "id": "jetbrains-file-icon-theme-php-auto",
+        "label": "| Auto | JetBrains New UI File Icon Theme (PHP)",
+        "path": "./themes/auto-jetbrains-icon-theme.json",
+        "_watch": true
       },
       {
-        "id": "jetbrains-file-icon-theme-dark",
-        "label": "| Dark | JetBrains New UI File Icon Theme",
-        "path": "./themes/dark-jetbrains-icon-theme.json"
+        "id": "jetbrains-file-icon-theme-php-dark",
+        "label": "| Dark | JetBrains New UI File Icon Theme (PHP)",
+        "path": "./themes/dark-jetbrains-icon-theme.json",
+        "_watch": true
       },
       {
-        "id": "jetbrains-file-icon-theme-light",
-        "label": "| Light | JetBrains New UI File Icon Theme",
-        "path": "./themes/light-jetbrains-icon-theme.json"
+        "id": "jetbrains-file-icon-theme-php-light",
+        "label": "| Light | JetBrains New UI File Icon Theme (PHP)",
+        "path": "./themes/light-jetbrains-icon-theme.json",
+        "_watch": true
       }
     ],
     "configuration": {
       "title": "JetBrains File Icon Theme",
       "properties": {
-        "jetbrains-file-icon-theme.enableGoTestIcons": {
+        "jetbrains-file-icon-theme-php.enableGoTestIcons": {
           "type": "boolean",
           "default": false,
           "description": "Experimental: Enable special icons for Go test files (*_test.go)"
         },
-        "jetbrains-file-icon-theme.enablePhpAbstractIcons": {
+        "jetbrains-file-icon-theme-php.enablePhpAbstractIcons": {
           "type": "boolean",
           "default": true,
           "description": "Use a dedicated icon for PHP base/abstract classes (Abstract*.php, Base*.php)"
         },
-        "jetbrains-file-icon-theme.enablePhpInterfaceIcons": {
+        "jetbrains-file-icon-theme-php.enablePhpServiceIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use a dedicated icon for PHP services (*Service.php)"
+        },
+        "jetbrains-file-icon-theme-php.enablePhpProviderIcons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use a dedicated icon for PHP providers (*Provider.php)"
+        },
+        "jetbrains-file-icon-theme-php.enablePhpInterfaceIcons": {
           "type": "boolean",
           "default": true,
           "description": "Use a dedicated icon for PHP interfaces (*Interface.php)"
         },
-        "jetbrains-file-icon-theme.enablePhpTraitIcons": {
+        "jetbrains-file-icon-theme-php.enablePhpTraitIcons": {
           "type": "boolean",
           "default": true,
           "description": "Use a dedicated icon for PHP traits (*Trait.php)"
         },
-        "jetbrains-file-icon-theme.enablePhpTestIcons": {
+        "jetbrains-file-icon-theme-php.enablePhpTestIcons": {
           "type": "boolean",
           "default": true,
           "description": "Use a dedicated icon for PHP tests (*Test.php)"
@@ -100,19 +115,19 @@
     },
     "commands": [
       {
-        "command": "jetbrains-file-icon-theme.updateFilenamePatternIcons",
+        "command": "jetbrains-file-icon-theme-php.updateFilenamePatternIcons",
         "title": "JetBrains Icons: Refresh Filename Pattern Icons"
       },
       {
-        "command": "jetbrains-file-icon-theme.updateGoTestIcons",
+        "command": "jetbrains-file-icon-theme-php.updateGoTestIcons",
         "title": "Update Go Test Icons (experimental)"
       }
     ]
   },
   "activationEvents": [
     "onStartupFinished",
-    "onCommand:jetbrains-file-icon-theme.updateFilenamePatternIcons",
-    "onCommand:jetbrains-file-icon-theme.updateGoTestIcons",
+    "onCommand:jetbrains-file-icon-theme-php.updateFilenamePatternIcons",
+    "onCommand:jetbrains-file-icon-theme-php.updateGoTestIcons",
     "onLanguage:go",
     "onLanguage:php"
   ],

@@ -1,31 +1,49 @@
-# JetBrains New UI File Icon Theme Extended for VS Code
+# JetBrains New UI File Icon Theme — PHP Optimized
 
-The goal of the JetBrains New UI File Icon Theme Extended is to reduce visual clutter and give you more space for your code and thoughts.
+A PHP-optimized version of the **JetBrains New UI File Icon Theme Extended**.
 
-[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme):
+Everything from the original theme, plus composite icons that tell PHP files apart at a glance by the role their name implies — base classes, interfaces, traits and tests each get the `php` icon with a distinct badge.
+
+## Based on
+
+This is a derivative of [JetBrains New UI File Icon Theme Extended](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme) by **fogio** — all of the original icon work, folder mappings and the JetBrains Mono font integration come from there.
+
+- VS Code Marketplace: [fogio.jetbrains-file-icon-theme](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme)
+- Open VSX: [fogio/jetbrains-file-icon-theme](https://open-vsx.org/extension/fogio/jetbrains-file-icon-theme)
+- Source: [fogio-org/vscode-jetbrains-file-icon-theme](https://github.com/fogio-org/vscode-jetbrains-file-icon-theme)
+
+The badges below track the original extension, not this version:
 
 ![VS Code Marketplace Version](https://vsmarketplacebadges.dev/version-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=VERSION)&nbsp;
 ![VS Code Marketplace Rating](https://vsmarketplacebadges.dev/rating-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=RATING)&nbsp;
 ![VS Code Marketplace Downloads](https://vsmarketplacebadges.dev/downloads-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=DOWNLOADS)&nbsp;
 ![VS Code Marketplace Installs](https://vsmarketplacebadges.dev/installs-short/fogio.jetbrains-file-icon-theme.svg?style=for-the-badge&colorA=555555&colorB=007ec6&label=INSTALLS)
 
-[Open VSX](https://open-vsx.org/extension/fogio/jetbrains-file-icon-theme):
+If you do not need the PHP additions, please install the original — it is the one that gets the upstream updates.
 
-![Open VSX Version](https://img.shields.io/open-vsx/v/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=VERSION)&nbsp;
-![Open VSX Rating](https://img.shields.io/open-vsx/rating/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=RATING)&nbsp;
-![Open VSX Downloads](https://img.shields.io/open-vsx/dt/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=DOWNLOADS)&nbsp;
-![Open VSX Release Date](https://img.shields.io/open-vsx/release-date/fogio/jetbrains-file-icon-theme?style=for-the-badge&color=%23c260ef&label=RELEASE%20DATE)
+## What this version adds
 
-I hope this theme will be the one you enjoy working with day and night.
+| File name | Icon |
+| :--- | :--- |
+| `Abstract*.php`, `Base*.php` | `php` + amber **A** badge |
+| `*Service.php` | `php` + teal **S** badge |
+| `*Provider.php` | `php` + pink **P** badge |
+| `*Interface.php` | `php` + green ring badge |
+| `*Trait.php` | `php` + purple **T** badge |
+| `*Test.php` | `php` + the JetBrains run/test badge |
+
+All six are enabled by default and can be turned off individually — see [PHP icons for interfaces, traits, base classes and tests](#php-icons-for-interfaces-traits-base-classes-and-tests) below.
+
+Everything else — every other file and folder icon, the light/dark/auto variants, the experimental Go test icons — behaves exactly as it does upstream.
 
 ---
 
-Check out our compatible extensions
+Compatible extensions from the original author
 
 | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-product-icon-theme/refs/heads/master/assets/img/icon.png" width="75"> | <img src="https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-color-theme/refs/heads/master/assets/img/icon.png" width="75"> |
 | :---: | :---: | :---: |
 | JetBrains New UI<br>**File Icon Theme** | JetBrains New UI<br>**Product Icon Theme** | JetBrains New UI<br>**Color Theme** |
-| You are here | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-product-icon-theme) | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-color-theme) |
+| [Original](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme) — this version is based on it | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-product-icon-theme) | [Install](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-color-theme) |
 
 ---
 
@@ -47,16 +65,7 @@ Icons for reserved file names
 
 ### Icons for PHP interfaces, traits, base classes and tests
 
-PHP files whose name follows a common convention get the `php` icon with an extra badge:
-
-| File name | Icon |
-| :--- | :--- |
-| `Abstract*.php`, `Base*.php` | `php` + amber **A** badge |
-| `*Interface.php` | `php` + green ring badge |
-| `*Trait.php` | `php` + purple **T** badge |
-| `*Test.php` | `php` + test badge |
-
-Enabled by default. Activation guide is located below.
+Added by this version — see [What this version adds](#what-this-version-adds) above. Enabled by default, activation guide is located below.
 
 ### Icons for go test files (experimental)
 
@@ -77,15 +86,17 @@ You can choose icons pack for dark or light theme. An "Auto" theme is also avail
 These are enabled by default. Each one can be turned off individually through the Settings UI, or in your settings.json file:
 
 ```json
-"jetbrains-file-icon-theme.enablePhpAbstractIcons": false,
-"jetbrains-file-icon-theme.enablePhpInterfaceIcons": false,
-"jetbrains-file-icon-theme.enablePhpTraitIcons": false,
-"jetbrains-file-icon-theme.enablePhpTestIcons": false,
+"jetbrains-file-icon-theme-php.enablePhpAbstractIcons": false,
+"jetbrains-file-icon-theme-php.enablePhpServiceIcons": false,
+"jetbrains-file-icon-theme-php.enablePhpProviderIcons": false,
+"jetbrains-file-icon-theme-php.enablePhpInterfaceIcons": false,
+"jetbrains-file-icon-theme-php.enablePhpTraitIcons": false,
+"jetbrains-file-icon-theme-php.enablePhpTestIcons": false,
 ```
 
-A file name that matches more than one pattern gets the most specific icon, so `AbstractUserTest.php` is a test and `UserRepositoryInterface.php` is an interface.
+A file name that matches more than one pattern gets the most specific icon, so `AbstractUserTest.php` is a test, `AppServiceProvider.php` is a provider and `UserRepositoryInterface.php` is an interface.
 
-These use the same workaround as the Go test icons described below, and share the same caching caveat: a newly created file gets its special icon only after the window is reloaded (`> Developer: Reload Window`).
+These use the same workaround as the Go test icons described below: the theme files are rewritten in place. The themes declare `_watch`, so VS Code reloads them as soon as they change and new files get their icon without a window reload.
 
 ### Enable Icons for go test files (experimental)
 
@@ -100,10 +111,10 @@ By default, this functionality is disabled. You can enable it through the Settin
 or settings.json file:
 
 ```json
-"jetbrains-file-icon-theme.enableGoTestIcons": true,
+"jetbrains-file-icon-theme-php.enableGoTestIcons": true,
 ```
 
-After enabling this setting, the theme begins to automatically add *_test.go files with a special icon. However, due to vscode limitations, the icons are cached and to see the special icon you need to restart ide. We decided not to add automatic restart in order not to cause inconvenience to users.
+After enabling this setting, the theme begins to automatically add *_test.go files with a special icon. Upstream this required an IDE restart, because VS Code caches the generated icon stylesheet. This version marks its themes with `_watch`, so VS Code re-reads them whenever they are rewritten and the icons show up right away.
 
 So if you added a new file _test.go, you will see a special icon for it only after you reload the window. Of course you can do it via interface or command `> Developer: Reload Window`
 
@@ -144,7 +155,12 @@ Also, there are some additional settings that you can apply both in the Settings
 
 ## Credits
 
-I express my deep gratitude to the JetBrains team for their work. Here are links to open resources used to create this theme:
+This version is built on top of **JetBrains New UI File Icon Theme Extended** by [fogio](https://github.com/fogio-org) — the original theme, its icon set and the font integration are their work, used under the MIT license. Only the PHP composite icons and the filename-pattern plugin that drives them were added here.
+
+- Original extension: [marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme](https://marketplace.visualstudio.com/items?itemName=fogio.jetbrains-file-icon-theme)
+- Original repository: [github.com/fogio-org/vscode-jetbrains-file-icon-theme](https://github.com/fogio-org/vscode-jetbrains-file-icon-theme)
+
+Deep gratitude also goes to the JetBrains team for their work. Here are links to open resources used to create the original theme:
 
 - JetBrains icons: [https://jetbrains.design/intellij/resources/icons_list/](https://jetbrains.design/intellij/resources/icons_list/)
 - JetBrains Mono font: [https://www.jetbrains.com/lp/mono/](https://www.jetbrains.com/lp/mono/)
