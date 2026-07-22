@@ -32,7 +32,7 @@ If you do not need the PHP additions, please install the original — it is the 
 | `*Trait.php` | `php` + purple **T** badge |
 | `*Test.php` | `php` + the JetBrains run/test badge |
 
-All six are enabled by default and can be turned off individually — see [PHP icons for interfaces, traits, base classes and tests](#php-icons-for-interfaces-traits-base-classes-and-tests) below.
+All six are enabled by default and can be turned off individually — see [PHP role icons](#php-role-icons) below.
 
 Everything else — every other file and folder icon, the light/dark/auto variants, the experimental Go test icons — behaves exactly as it does upstream.
 
@@ -63,7 +63,7 @@ Icons for reserved file names
 
 ![Preview file names icons](https://raw.githubusercontent.com/fogio-org/vscode-jetbrains-file-icon-theme/refs/heads/master/assets/img/preview_file_names.png)
 
-### Icons for PHP interfaces, traits, base classes and tests
+### Icons for PHP file roles
 
 Added by this version — see [What this version adds](#what-this-version-adds) above. Enabled by default, activation guide is located below.
 
@@ -81,7 +81,7 @@ Activation guide is located below.
 
 You can choose icons pack for dark or light theme. An "Auto" theme is also available that adapts to the color theme.
 
-### PHP icons for interfaces, traits, base classes and tests
+### PHP role icons
 
 These are enabled by default. Each one can be turned off individually through the Settings UI, or in your settings.json file:
 

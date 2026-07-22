@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.7.1
 
 - Add composite PHP icons for base classes (`Abstract*.php`, `Base*.php`), services (`*Service.php`), providers (`*Provider.php`), interfaces (`*Interface.php`), traits (`*Trait.php`) and tests (`*Test.php`), enabled by default
 - Declare `_watch` on all three icon themes so VS Code reloads them when the plugin rewrites them — pattern icons now appear without reloading the window, including in the "Auto" theme

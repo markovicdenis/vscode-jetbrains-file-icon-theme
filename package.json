@@ -3,7 +3,7 @@
   "displayName": "JetBrains New UI File Icon Theme - PHP Optimized",
   "description": "PHP-optimized version of the JetBrains New UI File Icon Theme Extended. Composite icons for PHP base classes, interfaces, traits and tests.",
   "publisher": "markovic",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "license": "MIT",
   "homepage": "https://github.com/markovicdenis/vscode-jetbrains-file-icon-theme",
   "bugs": {
